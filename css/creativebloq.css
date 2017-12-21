@@ -1,0 +1,105 @@
+/* Create four equal columns that floats next to each other */
+.webpage {
+    width: 1200px;
+    position: absolute;  
+    left:50%;
+    margin-left: -500px;
+}
+
+@font-face {
+        font-family: kenyan-coffee;
+        src:url(../fonts/kenyan_coffee_rg.ttf);
+    }
+
+.button {
+    border: none;
+    color: #FE5A13;
+    padding: 15px 32px;
+    font-family: kenyan-coffee;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 24px;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: #FE5A13;
+    color: white;
+}
+
+.button:active {
+    background-color: #FE5A13;
+}
+
+#sidenav {
+    float: left;
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    left: 120px;
+    top:125px;
+}
+
+#logo {
+    height: 100px;
+    width: 100px;
+    position:fixed;
+    left:152px;
+}
+
+#container {
+    position:absolute;
+    right:30px;
+    width:1068px;
+}
+
+.mix:hover img {
+    filter: grayscale(100%);
+    opacity: .75;
+    transition: .5s ease;
+}
+
+.mix {
+    float:left;
+    width: 356px;
+    height: 200px;
+    margin-bottom: -1px;
+    position:relative;
+}
+
+.mix img {
+    width: 356px;
+    height: 200px;
+    position: absolute;
+}
+
+.mix:hover .overlay {
+    height:40px;
+}
+ 
+.overlay {
+  position: absolute;
+  background-color: #FE5A13;
+  overflow: hidden;
+  width: 356px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  transition: .5s ease;
+  z-index: 99;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
