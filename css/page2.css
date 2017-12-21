@@ -1,0 +1,125 @@
+/* Style the header: fixed position (always stay at the top) */
+.webpage {
+    width: 1200px;
+    position: absolute;  
+    left:50%;
+    margin-left: -500px;
+}
+
+@font-face {
+      font-family: kenyan-coffee;
+      src:url(../fonts/kenyan_coffee_rg.ttf);
+    }
+
+
+#sidenav {
+    position: fixed;
+    width: 200px;
+    left: 152px;
+    top:125px;
+}
+
+#logo {
+    height: 100px;
+    width: 100px;
+    position:fixed;
+    left:152px;
+    top:8px;
+}
+
+#home {
+  position:fixed;
+  top:10px;
+}
+
+#container {
+    position:absolute;
+    right:230px;
+    width:700px;
+    top:115px;
+}
+
+.mix:hover img {
+    filter: grayscale(100%);
+    opacity: .75;
+    transition: .5s ease;
+}
+
+.mix {
+    width: 250px;
+    height: 140.5px;
+    margin-bottom: -1px;
+    position:relative;
+}
+
+.mix img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.mix:hover .overlay {
+    height:30px;
+}
+ 
+.overlay {
+  position: absolute;
+  background-color: #FE5A13;
+  overflow: hidden;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  transition: .5s ease;
+  z-index: 99;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  font-family: kenyan-coffee;
+  background-color:white;
+  height:125px;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 800px;
+  height: 8px;
+  background: white;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #FE5A13;
+  width: 0%;
+}
+
+.content {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  top: 150px
+  width: 200px;
+  z-index: -99;
+}
+
+#top {
+width:100%;
+}
